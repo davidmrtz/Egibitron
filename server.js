@@ -54,7 +54,7 @@ app.get("/plazo/:fecha", function (req, res) {
 });
 */
 
-app.get("/temp", function (req, res){
+app.get("/castellano", function (req, res){
 	
 	var d = new Date();
 	var n = d.getHours();
@@ -63,19 +63,49 @@ app.get("/temp", function (req, res){
 	if (n >= 0 && n < 6 || n >= 21) {
 		var respuesta = [
 			{
-				text: "Gabon!! ¡¡Buenas noches!!",	
+				text: "¡¡Buenas noches!!",	
 			}		
 		];
 	} else if (n >= 6 && n < 12) {
 		var respuesta = [
 			{
-				text: "Egun on!! ¡¡Buenos días!!",
+				text: "¡¡Buenos días!!",
 			}
 		];
 	} else if (n >= 12 && n < 21) {
 		var respuesta = [
 			{
-				text: "Arratsalde on!! ¡¡Buenas tardes!!",
+				text: "¡¡Buenas tardes!!",
+			}	
+		];
+	}
+	
+	// Devolver el objeto en formato JSON
+            res.json(respuesta);
+	
+});
+app.get("/euskara", function (req, res){
+	
+	var d = new Date();
+	var n = d.getHours();
+	
+	
+	if (n >= 0 && n < 6 || n >= 21) {
+		var respuesta = [
+			{
+				text: "Gabon!!",	
+			}		
+		];
+	} else if (n >= 6 && n < 12) {
+		var respuesta = [
+			{
+				text: "Egun on!!",
+			}
+		];
+	} else if (n >= 12 && n < 21) {
+		var respuesta = [
+			{
+				text: "Arratsalde on!!",
 			}	
 		];
 	}

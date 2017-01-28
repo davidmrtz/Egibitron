@@ -63,19 +63,19 @@ app.get("/temp", function (req, res){
 	if (n >= 0 && n < 6 || n >= 21) {
 		var respuesta = [
 			{
-				text: "¡¡Buenas noches!!",	
+				text: "Gabon!! ¡¡Buenas noches!!",	
 			}		
 		];
 	} else if (n >= 6 && n < 12) {
 		var respuesta = [
 			{
-				text: "¡¡Buenos días!!",
+				text: "Egun on!! ¡¡Buenos días!!",
 			}
 		];
 	} else if (n >= 12 && n < 21) {
 		var respuesta = [
 			{
-				text: "¡¡Buenas tardes!!",
+				text: "Arratsalde on!! ¡¡Buenas tardes!!",
 			}	
 		];
 	}

@@ -85,7 +85,7 @@ app.get("/castArriaga", function (req, res){
   
   if(day == 1 || day == 2 ||day == 3 ||day == 4){
   
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 20){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 19){
 		var respuesta = [
 			{
 				text: "¡Ahora está abierta!",
@@ -100,7 +100,7 @@ app.get("/castArriaga", function (req, res){
     }
   
   } else if (day == 5) {  	  	
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 18){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 17){
 		var respuesta = [
 			{
 				text: "¡Ahora está abierta!",
@@ -113,7 +113,7 @@ app.get("/castArriaga", function (req, res){
 			}
 		];
     }
-  } else if (day == 6 || day == 7) {
+  } else if (day == 6 || day == 0) {
 		var respuesta = [
 			{
 				text: "Está cerrada ahora mismo...",
@@ -135,7 +135,7 @@ app.get("/eusArriaga", function (req, res){
   
   if(day == 1 || day == 2 ||day == 3 ||day == 4){
   
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 20){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 19){
 		var respuesta = [
 			{
 				text: "Irekita dago oraintxe bertan!",
@@ -150,7 +150,7 @@ app.get("/eusArriaga", function (req, res){
     }
   
   } else if (day == 5) {  	  	
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 18){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 17){
 		var respuesta = [
 			{
 				text: "Irekita dago oraintxe bertan!",
@@ -163,7 +163,7 @@ app.get("/eusArriaga", function (req, res){
 			}
 		];
     }
-  } else if (day == 6 || day == 7) {
+  } else if (day == 6 || day == 0) {
 		var respuesta = [
 			{
 				text: "Oraintxe bertan itxita dago...",
@@ -185,7 +185,7 @@ app.get("/castJO", function (req, res){
   
   if(day == 1 || day == 2 ||day == 3 ||day == 4){
   
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 20){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 19){
 		var respuesta = [
 			{
 				text: "¡Ahora está abierta!",
@@ -200,7 +200,7 @@ app.get("/castJO", function (req, res){
     }
   
   } else if (day == 5) {  	  	
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 19){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 18){
 		var respuesta = [
 			{
 				text: "¡Ahora está abierta!",
@@ -213,7 +213,7 @@ app.get("/castJO", function (req, res){
 			}
 		];
     }
-  } else if (day == 6 || day == 7) {
+  } else if (day == 6 || day == 0) {
 		var respuesta = [
 			{
 				text: "Está cerrada ahora mismo...",
@@ -235,7 +235,7 @@ app.get("/eusJO", function (req, res){
   
   if(day == 1 || day == 2 ||day == 3 ||day == 4){
   
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 20){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 19){
 		var respuesta = [
 			{
 				text: "Irekita dago oraintxe bertan!",
@@ -250,7 +250,7 @@ app.get("/eusJO", function (req, res){
     }
   
   } else if (day == 5) {  	  	
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 19){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 18){
 		var respuesta = [
 			{
 				text: "Irekita dago oraintxe bertan!",
@@ -263,7 +263,7 @@ app.get("/eusJO", function (req, res){
 			}
 		];
     }
-  } else if (day == 6 || day == 7) {
+  } else if (day == 6 || day == 0) {
 		var respuesta = [
 			{
 				text: "Oraintxe bertan itxita dago...",
@@ -285,7 +285,7 @@ app.get("/castMendi", function (req, res){
   
   if(day == 1 || day == 2 ||day == 3 ||day == 4 || day == 5){
   
-    if(hour >= 8 && hour < 12 || hour == 12 && minutes < 45){
+    if(hour >= 7 && hour < 11 || hour == 11 && minutes < 45){
 		var respuesta = [
 			{
 				text: "¡Ahora está abierta!",
@@ -299,7 +299,7 @@ app.get("/castMendi", function (req, res){
 		];
     }
   
-  } else if (day == 6 || day == 7) {
+  } else if (day == 6 || day == 0) {
 		var respuesta = [
 			{
 				text: "Está cerrada ahora mismo...",
@@ -321,7 +321,7 @@ app.get("/eusMendi", function (req, res){
   
   if(day == 1 || day == 2 ||day == 3 ||day == 4 || day == 5){
   
-    if(hour >= 8 && hour < 12 || hour == 12 && minutes < 45){
+    if(hour >= 7 && hour < 11 || hour == 11 && minutes < 45){
 		var respuesta = [
 			{
 				text: "Irekita dago oraintxe bertan!",
@@ -335,7 +335,7 @@ app.get("/eusMendi", function (req, res){
 		];
     }
   
-  } else if (day == 6 || day == 7) {
+  } else if (day == 6 || day == 0) {
 		var respuesta = [
 			{
 				text: "Oraintxe bertan itxita dago...",
@@ -357,7 +357,7 @@ app.get("/castMoliNC", function (req, res){
   
   if(day == 1 || day == 2 ||day == 3 ||day == 4){
   
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 20){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 19){
 		var respuesta = [
 			{
 				text: "¡Ahora está abierta!",
@@ -372,7 +372,7 @@ app.get("/castMoliNC", function (req, res){
     }
   
   } else if (day == 5) {  	  	
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30){
 		var respuesta = [
 			{
 				text: "¡Ahora está abierta!",
@@ -385,7 +385,7 @@ app.get("/castMoliNC", function (req, res){
 			}
 		];
     }
-  } else if (day == 6 || day == 7) {
+  } else if (day == 6 || day == 0) {
 		var respuesta = [
 			{
 				text: "Está cerrada ahora mismo...",
@@ -407,7 +407,7 @@ app.get("/eusMoliNC", function (req, res){
   
   if(day == 1 || day == 2 ||day == 3 ||day == 4){
   
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30 || hour >= 16 && hour < 20){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30 || hour >= 15 && hour < 19){
 		var respuesta = [
 			{
 				text: "Irekita dago oraintxe bertan!",
@@ -422,7 +422,7 @@ app.get("/eusMoliNC", function (req, res){
     }
   
   } else if (day == 5) {  	  	
-    if(hour >= 8 && hour < 13 || hour == 13 && minutes < 30){
+    if(hour >= 7 && hour < 12 || hour == 12 && minutes < 30){
 		var respuesta = [
 			{
 				text: "Irekita dago oraintxe bertan!",
@@ -435,7 +435,7 @@ app.get("/eusMoliNC", function (req, res){
 			}
 		];
     }
-  } else if (day == 6 || day == 7) {
+  } else if (day == 6 || day == 0) {
 		var respuesta = [
 			{
 				text: "Oraintxe bertan itxita dago...",

@@ -274,7 +274,7 @@ app.get("/eusJO", function (req, res){
 	// Devolver el objeto en formato JSON
             res.json(respuesta);
 	
-});
+}); 
 
 app.get("/castMendi", function (req, res){
 	

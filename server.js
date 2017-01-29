@@ -21,19 +21,19 @@ app.get("/castellano", function (req, res){
 	var n = d.getHours();
 	
 	
-	if (n >= 0 && n < 6 || n >= 21) {
+	if (n < 5 || n >= 20) {
 		var respuesta = [
 			{
 				text: "¡¡Buenas noches!!",	
 			}		
 		];
-	} else if (n >= 6 && n < 12) {
+	} else if (n >= 5 && n < 11) {
 		var respuesta = [
 			{
 				text: "¡¡Buenos días!!",
 			}
 		];
-	} else if (n >= 12 && n < 21) {
+	} else if (n >= 11 && n < 20) {
 		var respuesta = [
 			{
 				text: "¡¡Buenas tardes!!",
@@ -51,19 +51,19 @@ app.get("/euskara", function (req, res){
 	var n = d.getHours();
 	
 	
-	if (n >= 0 && n < 6 || n >= 21) {
+	if (n < 5 || n >= 20) {
 		var respuesta = [
 			{
 				text: "Gabon!!",	
 			}		
 		];
-	} else if (n >= 6 && n < 12) {
+	} else if (n >= 5 && n < 11) {
 		var respuesta = [
 			{
 				text: "Egun on!!",
 			}
 		];
-	} else if (n >= 12 && n < 21) {
+	} else if (n >= 11 && n < 20) {
 		var respuesta = [
 			{
 				text: "Arratsalde on!!",

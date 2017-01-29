@@ -14,7 +14,7 @@ var app = express();
 app.use(express.static(__dirname + "/public"));
 
 
-
+/////////// SE PONE UNA HORA MENOS PORQUE SEÑALA LA HORA UTC ///////////////////////
 app.get("/castellano", function (req, res){
 	
 	var d = new Date();
